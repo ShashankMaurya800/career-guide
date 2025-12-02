@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmaps – CareerGuide</title>
+    <link rel="stylesheet" href="roadmap.css">
+    <script defer src="roadmap.js"></script>
+</head>
+<body>
+  <!-- YOUTUBE LEARNING RESOURCES -->
+<section class="youtube-section">
+    <h2>Recommended YouTube Learning Resources</h2>
+    <p class="youtube-sub">Learn from top channels and boost your career roadmap</p>
+
+    <div class="youtube-grid">
+
+        <!-- VIDEO 1 -->
+        <a class="yt-card" href="https://www.youtube.com/watch?v=nu_pCVPKzTk" target="_blank">
+            <img src="https://img.youtube.com/vi/nu_pCVPKzTk/maxresdefault.jpg" alt="Web Dev Roadmap">
+            <h3>Complete Web Development Roadmap</h3>
+            <p>Beginner to Advanced roadmap for becoming a full-stack web developer.</p>
+        </a>
+
+        <!-- VIDEO 2 -->
+        <a class="yt-card" href="https://www.youtube.com/watch?v=RBSGKlAvoiM" target="_blank">
+            <img src="https://img.youtube.com/vi/RBSGKlAvoiM/maxresdefault.jpg" alt="Data Science Roadmap">
+            <h3>Data Science Roadmap 2025</h3>
+            <p>Step-by-step guide to learning Machine Learning, AI & Python.</p>
+        </a>
+
+        <!-- VIDEO 3 -->
+        <a class="yt-card" href="https://www.youtube.com/watch?v=2ePf9rue1Ao" target="_blank">
+            <img src="https://img.youtube.com/vi/2ePf9rue1Ao/maxresdefault.jpg" alt="AI Roadmap">
+            <h3>AI & Machine Learning Roadmap</h3>
+            <p>Everything you need to become an AI Engineer in 2025.</p>
+        </a>
+
+        <!-- VIDEO 4 -->
+        <a class="yt-card" href="https://www.youtube.com/watch?v=bPVA6-93V80" target="_blank">
+            <img src="https://img.youtube.com/vi/bPVA6-93V80/maxresdefault.jpg" alt="Cybersecurity Roadmap">
+            <h3>Cyber Security Roadmap</h3>
+            <p>Learn ethical hacking, networking, Linux, SOC tools & more.</p>
+        </a>
+
+        <!-- VIDEO 5 -->
+        <a class="yt-card" href="https://www.youtube.com/watch?v=Wvf0mBNGjXY" target="_blank">
+            <img src="https://img.youtube.com/vi/Wvf0mBNGjXY/maxresdefault.jpg" alt="Cloud Roadmap">
+            <h3>Cloud Computing Roadmap</h3>
+            <p>AWS, DevOps, Docker, Kubernetes — complete learning path.</p>
+        </a>
+
+    </div>
+</section>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Career<span>Buddy</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a class="active" href="#">Roadmaps</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+        <button class="menu-btn">☰</button>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Career Roadmaps</h1>
+        <p>Follow clear step-by-step paths to become a professional in your chosen field.</p>
+    </header>
+
+    <!-- CATEGORY SELECTOR -->
+    <section class="category-section">
+        <h2>Select a Career Path</h2>
+
+        <div class="category-buttons">
+            <button onclick="showRoadmap('webdev')">Web Developer</button>
+            <button onclick="showRoadmap('datascience')">Data Scientist</button>
+            <button onclick="showRoadmap('ai')">AI Engineer</button>
+            <button onclick="showRoadmap('cyber')">Cyber Security</button>
+        </div>
+    </section>
+
+    <!-- ROADMAP DISPLAY -->
+    <section class="roadmap-container" id="roadmapContainer">
+        <p class="placeholder">Choose a career above to view its roadmap.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Contact Us- CareerBuddy@gmail.com</p>
+    </footer>
+
+</body>
+</html>

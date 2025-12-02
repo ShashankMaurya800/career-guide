@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers – CareerGuide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">CareerBuddy</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a class="active" href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <!-- QUIZ CONTAINER -->
+    <div class="quiz-container">
+        <h2>Career Preference Quiz</h2>
+        
+        <div id="timer">Time Left: 30s</div>
+        <div id="progress"></div>
+
+        <div id="question-box">
+            <h3 id="question"></h3>
+            <div id="options"></div>
+        </div>
+
+        <button id="next-btn">Next</button>
+
+        <div id="result-box" class="hide">
+            <h2>Your Score</h2>
+            <p id="score"></p>
+            <a href="careers.html" class="btn">See Suggested Careers</a>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

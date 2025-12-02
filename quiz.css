@@ -1,0 +1,144 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* MATCH HOME PAGE BACKGROUND */
+body {
+    background: #f5f7ff;   /* Light clean background */
+    min-height: 100vh;
+    color: #333;           /* Dark text like homepage */
+}
+
+/* MATCH NAVBAR THEME */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #ffffff;                      /* White navbar like home */
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 26px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+   background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #6a11cb;
+}
+
+/* QUIZ CARD MATCHING HOME PAGE STYLE */
+.quiz-container {
+    max-width: 650px;
+    margin: 80px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+
+    /* Soft shadow like Home Page cards */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.quiz-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Timer */
+#timer {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Progress Bar */
+#progress {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    position: relative;
+}
+#progress::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: var(--progress-width, 0%);
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+/* Question */
+#question {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+/* Options */
+.option {
+    background: #ffffff;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: #f0f0f0;
+}
+
+.option.selected {
+    background: #e6e0ff;
+    border-color: #6a11cb;
+}
+
+/* Next Button */
+#next-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#next-btn:hover {
+    opacity: 0.9;
+}
